@@ -1,0 +1,71 @@
+ 
+ @font-face {
+    font-family: myFont;
+    src: url(Inter.ttf);
+ }
+ 
+ :root{
+--Green: hsl(75, 94%, 57%);
+--White : hsl(0, 0%, 100%);
+--Grey : hsl(0, 0%, 20%);
+--DarkGrey: hsl(0, 0%, 12%);
+--Black: hsl(0, 0%, 8%);
+--it- : social-links-profile-main\social-links-profile-main\assets\fonts\Inter-VariableFont_slnt,wght.ttf;
+}
+
+html{
+    display: flex;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    background-color:var(--Black);
+    font-family:myFont;
+    font-size: 11px;
+    text-align: center;
+}
+
+body{
+    
+    display:grid;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3%;
+    background-color:var(--DarkGrey);
+}
+
+img{
+    border-radius: 100%;
+}
+
+header{
+    text-align: center;
+}
+header > h1,p{
+    color: var(--White);
+    margin-top: 10%;
+}
+header > h3{
+    color: var(--Green);
+}
+
+main > *{
+    display: grid;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    color: var(--White);
+    background-color: var(--Grey);
+
+}
+
+main > div:hover{
+    color: var(--Black);
+    background-color: var(--Green);
+}
+
+@media (max-width:375px) {
+    
+body{
+    margin:auto;
+    position: sticky;
+}
+}
